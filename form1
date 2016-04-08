@@ -51,6 +51,13 @@ legend { position: relative; top: 6px; left: -7px; }
 
 /* ==================== Form style sheet for IE end ==================== */
 
+//JOHN-EDIT
+.header {
+    width: 100%;
+    border-bottom: 1px solid #0B0C0C;
+    overflow: hidden;
+}
+
 </style>
 <![endif]-->
 </head>
@@ -59,9 +66,20 @@ legend { position: relative; top: 6px; left: -7px; }
 <body>
 
 	<form action="" method="post">
+		/* ==================== JOHN-EDIT start ==================== */
+		<div class="header">
+		<div style="float:right;width:40%;background-color:yellow">
+		<h3>Height is variable</h3>
+		</div>	
+		<div style="float:right;width:30%;background-color:red">
+		<h3>Height is variable</h3>
+		</div>	
+  		<br style="clear:both">
+  		/* ==================== JOHN EDIT end ==================== */
+  		
 		<!-- ============================== Fieldset 1 ============================== -->
 		<fieldset>
-			<legend>Lorem ipsum:</legend>
+			<legend>Lorem ipsum:</legend> //john-edit replace legend with a div  
 			<hr class="formik" />
 				<label for="input-one"><strong>Input One:</strong></label><br />
 				<input name="input-one-name" type="text" size="20" id="input-one" class="text" /><br />
