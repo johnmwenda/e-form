@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Form</title>
+
+<style type="text/css">
+
+* { margin: 0; padding: 0; }
+
+html { height: 100%; font-size: 62.5% }
+
+body { height: 100%; background-color: #FFFFFF;   font: 1.2em Georgia, Verdana, Arial, Helvetica, sans-serif; }
+
+
+/* ==================== Form style sheet ==================== */
+form{width:1000px;margin: 20px auto 100px;border:1px solid;padding:5px;padding-right:18px;}
+table.form {  border-collapse: collapse; width:100%; }
+
+table.form th{ padding: 4px 5px; font-weight: normal;text-align:right;}
+table.form td { padding: 4px 5px; font-weight: normal;text-align:left;}
+
+table.form label { color: #4A4643; margin-right: 12px;font-style:italic }
+table.form td span { font-size: 0.9em; color: #181818; margin-left: 8px; }
+table.form td samp { font: 1em Verdana, Arial, Helvetica, sans-serif; color: #000000; }
+
+table.form input { width: 100%; }
+table.form input.answer { width: auto; }
+table.form textarea { width: 385px; height: 160px;  }
+
+table.form input.inp-text, table.form input.answer, table.form textarea
+{ border: 1px solid #909090; border-right: 1px solid #BBBBBB; border-bottom: 1px solid #BBBBBB; padding: 3px; }
+table.form input:focus, table.form textarea:focus { border: 1px solid #606060; } /* does not work in IE */
+
+table.form th.message-up { vertical-align: top !important; }
+
+table.form label.invisible { visibility: hidden; }
+
+table.form td.submit-button-right { text-align: right !important; }
+table.form input.submit-text { font: 1.4em Georgia, "Times New Roman", Times, serif; letter-spacing: 1px; width: auto; }
+
+/* ==================== Form style sheet END ==================== */
+
+
+.header{overflow:hidden;margin-bottom:10px;color:#8A8683;font-weight:300;}
+.header h3{margin-bottom:2px;font-style:italic}
+
+
+
+</style>
+
+<!--[if lte IE 7]>
+<style type="text/css">
+
+/* ==================== Form style sheet for IE 7 and lower ==================== */
+
+legend { position: relative; top: 6px; left: -7px; }
+
+/* ==================== Form style sheet for IE end ==================== */
+
+</style>
+<![endif]-->
+</head>
+
+
+<body>
+	<p>Scroll down to view the whole form</p>
+	<form action="form.php" method="post">
+		<!-- Header section with image and contact details-->
+		<div class="header">
+			<div style="float:right;width:40%;">
+			<h2>EAGLE BUSINESS VENTURE</h2>
+			
+			<hr style="margin-bottom:15px;border:none"/>
+			<h3>P.O.BOX 2878-60100</h3>
+			<h3>Phone 020304322</h3>
+			<h3>Tel:0719512216</h3>
+			<h3>Email:eaglebusiness@gmail.com</h3>
+			<h3>WEBSITE:eaglebusinessventure.co.ke</h3>
+			</div>	
+			<div style="float:right;width:30%;text-align:right;padding-right:10px">
+			<img src="oval3.png"/>
+			</div>	
+			<br style="clear:both">
+		</div>
+		<hr class="formik" />
+		
+		<h3 style="text-align:center;text-decoration:underline;margin-bottom:10px;margin-bottom: 15px;
+    margin-top: 15px;">MEMBERSHIP APPLICATION FORM</h3>
+	
+		
+	<!-- Beginning of table-->
+		<table class="form">			
+			<tr>
+				<th><label for="input_1"><strong>Applicant's Name</strong></label></th>
+				<td colspan="7"><input class="inp-text" name="input_1_name" id="input_1" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_2"><strong>Home Address</strong></label></th>
+				<td colspan="3"><input class="inp-text" name="input_2_address" id="input_2" type="text" size="" /></td>
+				
+				<th colspan=""><label for="input_3"><strong>Phone Number:</strong></label></th>
+				<td colspan="5"><input class="inp-text" name="input_3_phone" id="input_3" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_4"><strong>I.D Number</strong></label></th>
+				<td colspan="3"><input class="inp-text" name="input_4_id" id="input_4" type="text" size="" /></td>
+				
+				<th><label for="input_5"><strong>MEMBERSHIP No</strong></label></th>
+				<td colspan="5"><input class="inp-text" name="input_5_membership" id="input_5" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_6"><strong>Sex</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_6_sex" id="input_6" type="text" size="" /></td>
+				
+				<th colspan="-1"><label for="input_7"><strong>Year of Birth</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_7_yob" id="input_7" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_8"><strong>Next of Kin</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_8_kin_name" id="input_8" type="text" size="" /></td>
+				
+				<th><label for="input_9"><strong>Relationship</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_9_kin_rshp" id="input_9" type="text" size="" /></td>
+				
+				<th><label for="input_10"><strong>I.D No</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_10_kin_id" id="input_10" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_11"><strong>Type of Business</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_11_type_of_business" id="input_11" type="text" size="" /></td>
+				<th><label for="input_12"><strong>Location</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_12_location" id="input_12" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th><label for="input_13"><strong>Age of Business</strong></label></th>
+				<td><input class="inp-text" name="input_13_age_of_business" id="input_13" type="text" size="" /></td>
+				
+			</tr>
+			<tr>				
+				<th colspan="1" style="width:140px"><label for="input_14"><strong>Date of membership to be effective</strong></label></th>
+				<td colspan="6"><input class="inp-text" name="input_14_date_of_member" id="input_14" type="text" size="" /></td>	
+				
+			</tr>
+			<tr>				
+				<th colspan="8" style="text-align:left"><label style="color:#181818;"><strong>Registration Fee Paid:</strong></label></th>
+			</tr>
+			<tr>				
+				<th><label for="input_15"><strong>Amount</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_15_ammount_register" id="input_15" type="text" size="" /></td>				
+			</tr>
+			<tr>				
+				<th><label for="input_16"><strong>Date</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_16_date_register" id="input_16" type="text" size="" /></td>				
+			</tr>
+			<tr>				
+				<th colspan="8" style="text-align:left;padding-top:30px"><label style="font-style:normal;color:#181818;font-size:13px"><strong>I agree to the terms and conditions of EAGLE BUSINESS VENTURE</strong></label></th>
+			</tr>
+			<tr>				
+				<th colspan="3" style="text-align:left"><label><strong>Applicant's Signature</strong></label></th>
+				
+				<th><label for="input_17"><strong>Date</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_17_date_register" id="input_17" type="text" size="" /></td>
+			</tr>
+			<tr>				
+				<th colspan="8"><label><strong><h3 style="text-align:left;font-size:16px;text-decoration:underline;margin-bottom:10px;margin-bottom: 15px;
+    margin-top: 15px;color:#181818;font-style:normal">For official use only</h3></strong></label></th>
+			</tr>
+			<tr>				
+				<th colspan="8" style="text-align:left"><label><strong>Signed in the presence of EAGLE BUSINESS VENTURE officer</strong></label></th>
+			</tr>
+			<tr style="line-height:4">				
+				<th><label for="input_18"><strong>Name</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_18_name_official" id="input_18" type="text" size="" /></td>
+			</tr>
+			<tr style="line-height:4">
+				<th><label><strong>Signature</strong></label></th>
+			
+			</tr>
+			<tr style="line-height:4">
+				<th><label for="input_19"><strong>Date:</strong></label></th>
+				<td colspan="2"><input class="inp-text" name="input_19_date_official" id="input_19" type="text" size="" /></td>
+			</tr>
+			
+			<tr style="line-height:4;"">
+				<td colspan="8" style="text-align:center;"><input class="inp-text" name="input_extra-name" id="input_extra" type="submit" value="SUBMIT THE FORM"  style="width:30%;padding: 10px 0 10px 0;font-weight: 600;font-style:oblique"/></td>
+			</tr>
+	
+		</table> <!-- End of table-->
+	</form>
+<p>Scroll UP to view the whole form</p>
+</body>
+</html>
+
